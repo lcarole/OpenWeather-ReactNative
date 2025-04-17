@@ -13,7 +13,7 @@ export default function WeatherDetail() {
   const { city } = useLocalSearchParams<{ city: string }>();
   const [data, setData] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
-  const API_KEY = '904a0da56cba1f7f3b26d1a404019288';
+  const API_KEY = 'VOTRE CLE API'; // Remplacez par votre clé API OpenWeatherMap
 
   useEffect(() => {
     if (!city) return;
